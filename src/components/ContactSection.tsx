@@ -45,6 +45,15 @@ export default function ContactSection() {
                 </div>
                 <span>ВКонтакте: lazertatarstan</span>
               </a>
+              <a
+                href="tel:+79196496009"
+                className="flex items-center gap-4 text-white/60 hover:text-white transition-colors"
+              >
+                <div className="flex h-10 w-10 items-center justify-center border border-white/20">
+                  <Icon name="Phone" size={18} />
+                </div>
+                <span>+7 (919) 649-60-09</span>
+              </a>
             </div>
           </div>
 
