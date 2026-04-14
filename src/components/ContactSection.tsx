@@ -1,13 +1,34 @@
 import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 
+const SEND_EMAIL_URL = 'https://functions.poehali.dev/1a3fc9ac-e5f3-4731-8826-0109cb74bfe0';
+
 export default function ContactSection() {
   const [form, setForm] = useState({ name: '', phone: '', message: '' });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError('');
+    try {
+      const res = await fetch(SEND_EMAIL_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError('Ошибка отправки. Попробуйте ещё раз.');
+      }
+    } catch {
+      setError('Ошибка отправки. Попробуйте ещё раз.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -97,11 +118,13 @@ export default function ContactSection() {
                     className="w-full border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/30 outline-none focus:border-amber-400 transition-colors resize-none"
                   />
                 </div>
+                {error && <p className="text-red-400 text-sm">{error}</p>}
                 <button
                   type="submit"
-                  className="w-full bg-amber-400 py-4 text-sm font-medium text-black transition-colors hover:bg-amber-300"
+                  disabled={loading}
+                  className="w-full bg-amber-400 py-4 text-sm font-medium text-black transition-colors hover:bg-amber-300 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Отправить заявку
+                  {loading ? 'Отправляем...' : 'Отправить заявку'}
                 </button>
               </form>
             )}
