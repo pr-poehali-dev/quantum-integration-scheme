@@ -75,6 +75,15 @@ export default function ContactSection() {
                 </div>
                 <span>+7 (919) 649-60-09</span>
               </a>
+              <a
+                href="mailto:fidaris1986@mail.ru"
+                className="flex items-center gap-4 text-white/60 hover:text-white transition-colors"
+              >
+                <div className="flex h-10 w-10 items-center justify-center border border-white/20">
+                  <Icon name="Mail" size={18} />
+                </div>
+                <span>fidaris1986@mail.ru</span>
+              </a>
             </div>
           </div>
 
