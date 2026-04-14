@@ -55,7 +55,7 @@ export default function HeroSection() {
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-amber-400 shadow-2xl md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/bucket/53b728d4-0cb8-4876-9e8a-20e484bd3536.jpg"
+                  src="https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/bucket/5f0919c8-db4d-4d31-8cee-e5b5279454f1.jpg"
                   alt="Производство изделий из фанеры"
                   className="h-full w-full object-cover"
                 />
