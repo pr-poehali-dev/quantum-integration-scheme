@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/files/d7851ec5-c926-4b75-af5a-019a10d9b8d5.jpg',
-  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/files/f02d8cb1-a9e8-4c0b-897f-01b2be85566e.jpg',
-  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/files/5541f2a7-ff82-46a3-bad8-898ac5428c09.jpg',
-  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/files/16e0a692-43c7-4c8a-8ce0-cc0affc34893.jpg',
+  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/bucket/446dd845-5c71-485b-aa37-d0e0413d42b2.jpg',
+  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/bucket/d2ecaa76-1f49-4dcd-b57b-3a2e1909cd8b.jpg',
+  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/bucket/025495ba-b109-4df9-937d-c28d6dfac45e.jpg',
+  'https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/bucket/53b728d4-0cb8-4876-9e8a-20e484bd3536.jpg',
 ];
 
 export default function HeroSection() {
@@ -55,7 +55,7 @@ export default function HeroSection() {
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-amber-400 shadow-2xl md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/files/fc49ebbc-64ba-4452-b968-246e3e0fa2af.jpg"
+                  src="https://cdn.poehali.dev/projects/64b3b642-d0fa-484c-9ecc-c7022ad73828/bucket/53b728d4-0cb8-4876-9e8a-20e484bd3536.jpg"
                   alt="Производство изделий из фанеры"
                   className="h-full w-full object-cover"
                 />
