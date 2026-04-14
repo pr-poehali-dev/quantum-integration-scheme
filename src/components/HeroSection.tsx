@@ -80,7 +80,7 @@ export default function HeroSection() {
                 </p>
                 <div className="flex flex-wrap gap-4 pt-4">
                   <a
-                    href="https://t.me/"
+                    href="https://t.me/FidarisMurtazin"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-none bg-amber-400 px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-amber-300"
