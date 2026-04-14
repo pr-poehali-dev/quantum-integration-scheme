@@ -95,6 +95,14 @@ export default function HeroSection() {
                   >
                     ВКонтакте
                   </a>
+                  <a
+                    href="https://vk.com/albums-217241390"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-none border border-amber-400/60 px-6 py-3 text-sm font-medium text-amber-400 transition-colors hover:border-amber-400 hover:bg-amber-400/10"
+                  >
+                    Наши работы
+                  </a>
                 </div>
               </div>
             </div>
